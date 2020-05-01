@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/meitu.css">
+</head>
+<body>
+    <div class="tabeba">
+        <ul class="left">
+            <li></li>
+            <li></li>
+            <li></li>
+            <div class="main" >
+                <div class="list"><a href="javascript:;">手机</a></div>
+                <div class="list"><a href="javascript:;">电脑</a></div>
+                <div class="list"><a href="javascript:;">美图</a></div>
+                <div class="list"><a href="javascript:;">键盘</a></div>
+                <div class="list"><a href="javascript:;">鼠标</a></div>
+                <div class="list"><a href="javascript:;" class="search"><i>searchicon</i></a><span>美图手机</span></div>
+            </div>
+        </ul>
+        <div class="logo">
+            <i class="icon">icon</i>
+        </div>
+        <div class="user">
+            <i>icon</i>
+        </div>
+    </div>
+</body>
+<script>
+    var meau = document.querySelector(".left");
+    var main = document.querySelector(".main");
+    meau.onclick = function(){
+        if(meau.className == "left"){
+            meau.setAttribute("class" , "left start");
+            // main.style.display = "block";
+            main.setAttribute("class" , "main open");
+        }else{
+            meau.setAttribute("class" , "left");
+            // main.style.display = "none";
+            main.setAttribute("class" , "main");
+        }
+       
+    }
+</script>
+</html>

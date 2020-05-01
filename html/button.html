@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: black;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            width:400px;
+            height:100px;
+            background:linear-gradient( 90deg ,rgb(190, 73, 161) , yellow , green , orange , rgb(190, 73, 161));
+            background-size : 400%;
+            text-align: center;
+            line-height: 100px;
+            text-transform: uppercase;
+            font-size:24px;
+            border-radius: 50px;
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin:  auto;
+            z-index:1;
+        }
+        a:hover{
+            animation: run 8s linear infinite ;
+        }
+        a::before{
+            content: '';
+            position: absolute;
+            left: -5px;
+            bottom: -5px;
+            right: -5px;
+            top: -5px;
+            background:linear-gradient( 90deg ,rgb(190, 73, 161) , yellow , green , orange , rgb(190, 73, 161));
+            background-size : 400%;
+            border-radius: 50px;
+            filter:blur(20px);
+            z-index: -1; 
+        }
+         a:hover::before{
+            animation: run 8s linear infinite;
+         }
+        @keyframes run {
+            /* from{
+                background-position : 0 0 ; 
+            } */
+            100%{
+                background-position : -500% 0; 
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <a href="javascript:;">submit</a>
+</body>
+</html>

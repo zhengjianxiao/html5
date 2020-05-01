@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .auto{
+          height:500px;
+          border-bottom:5px solid black;
+      }
+      .auto div{
+          border-radius: 50%;
+          background-color: #bfa;
+          height:50px;
+          width:50px;
+          float:left;
+          margin-left: 5px;
+          animation: run 2s infinite linear alternate;
+          animation-play-state:paused;
+      }
+      .auto .div2{
+          background-color: red;
+          animation-delay: 0.6s;
+      }
+      .auto .div10{
+          background-color: blue;
+          animation-delay: 0.84s;
+      }
+      .auto .div9{
+          background-color: skyblue;
+          animation-delay: 0.37s;
+      }
+      .auto .div8{
+          background-color:yellow;
+          animation-delay: 0.76s;
+      }
+      .auto .div7{
+          background-color:yellowgreen;
+          animation-delay: 0.9s;
+      }
+      .auto .div6{
+          background-color: green;
+          animation-delay: 0.2s;
+      }
+      .auto .div5{
+          background-color: cornflowerblue;
+          animation-delay: 0.1s;
+      }
+      .auto .div4{
+          background-color: pink;
+          animation-delay: 0.8s;
+      }
+      .auto .div3{
+          background-color: chocolate;
+          animation-delay: 0.4s;
+      }
+      @keyframes run{
+          from{
+              margin-top:0px;
+          }
+          to{
+              margin-top:450px;
+          }
+      }
+
+    </style>
+</head>
+<body>
+    <div class="auto">
+        <div class="div1"></div>
+        <div class="div2"></div>
+        <div class="div3"></div>
+        <div class="div4"></div>
+        <div class="div5"></div>
+        <div class="div6"></div>
+        <div class="div7"></div>
+        <div class="div8"></div>
+        <div class="div9"></div>
+        <div class="div10"></div>
+
+    </div>
+</body>
+</html>

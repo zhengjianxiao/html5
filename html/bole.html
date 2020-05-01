@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <style>
+      .auto{
+          height:500px;
+          border-bottom:5px solid black;
+      }
+      .auto div{
+          border-radius: 50%;
+          background-color: #bfa;
+          height:50px;
+          width:50px;
+          float:left;
+          margin-left: 5px;
+          animation: run 3s infinite  linear;
+      }
+
+
+      @keyframes run{
+          from{
+              margin-top:0;
+          }
+          10%,30%,50%,70%,90%{
+              margin-top:450px;
+          }
+          20%{
+              margin-top:100px;
+          }
+          40%{
+              margin-top:200px;
+          }
+          60%{
+              margin-top:300px;
+          }
+          80%{
+              margin-top:400px;
+          }
+          to{
+              margin-top: 450px;
+          }
+      }
+  </style>
+</head>
+<body>
+    <div class="auto">
+        <div class="div1"></div>
+        <div class="div2"></div>
+        <div class="div3"></div>
+        <div class="div4"></div>
+        <div class="div5"></div>
+        <div class="div6"></div>
+        <div class="div7"></div>
+        <div class="div8"></div>
+        <div class="div9"></div>
+        <div class="div10"></div>
+
+    </div>
+</body>
+</html>

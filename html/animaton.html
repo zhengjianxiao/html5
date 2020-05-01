@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .div1{
+        width: 132px;
+        height: 271px;
+        background-image: url(../images/step.png);
+        animation-name: mitu;
+        animation-duration: 0.3s;
+        animation-timing-function:steps(3) ;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+    }
+    @keyframes mitu{
+        from{
+            background-position: 0 0;
+        }
+        to{
+            background-position: 396px 0;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="div1"></div>
+</body>
+</html>

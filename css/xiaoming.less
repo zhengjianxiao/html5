@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+    height: 100%;
+}
+body:extend(html){
+    background-color: black;
+    color: white;
+}
+.content{
+    height:100%;
+    font-size: 0;
+    
+    .items{
+        width: calc(100% / 6);
+        height: 100%;
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+       
+        div{
+            font-size: 30px;
+            height:100%;
+            width:0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden ;
+            font-style: italic;
+            position: absolute;
+            top:0;
+            left: 0;
+            animation: part 1.8s linear 0s forwards ;
+        }
+        .part1{
+            background-color: rgb(50, 166, 201);
+            z-index: 1;
+            animation: part 0.8s linear 0s forwards ;
+        }
+        .part2{
+            background-color: rgb(202, 40, 129);
+            z-index: 2;
+            animation: part 0.4s linear 1.6s forwards ;
+        }
+        .part3{
+            background-color: rgb(177, 151, 37);
+            z-index: 3;
+            animation: part 0.4s linear 2.1s forwards ;
+        }
+        .part4{
+            background-color: rgb(210, 30, 90);
+            z-index: 4;
+            animation: part 0.4s linear 2.6s forwards ;
+        }
+        .part5{
+            background-color: rgb(133, 41, 56);
+            z-index: 4;
+            animation: part 0.4s linear 3.1s forwards ;
+        }
+        .part6{
+            text-shadow: .5em 0 .5em rgba(230, 8, 93, 0.5) , -.5em 0 .5em rgba(230, 8, 93, 0.5) ,  0 -.5em .5em rgba(230, 8, 93, 0.5);
+            background-color: black;
+            z-index: 5;
+            animation: part 0.4s linear 3.6s forwards ;
+        }
+}
+}
+#last1 {
+  animation: part .4s linear 5s forwards;  
+}
+#last2 {
+    animation: part .4s linear 5.1s forwards;  
+  }
+  #last3 {
+    animation: part .4s linear 5.2s forwards;  
+  }
+  #last4 {
+    animation: part .4s linear 5.3s forwards;  
+  }
+  #last5 {
+    animation: part .4s linear 5.4s forwards;  
+  }
+  #last6 {
+    animation: part .4s linear 5.5s forwards;  
+  }
+@keyframes part{
+    from{
+        width:0%;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+
+.items a{
+    display: block;
+    width:400px;
+    height:300px;
+    background-color: red;
+}

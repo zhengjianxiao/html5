@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 0.1333333vm * 40;
+}
+.w{
+    width: 693/40rem;
+    margin: 0 auto;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color:#fff;
+}
+.header:extend(.w){
+    height: 177/40rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .icon img{
+        width: 48/40rem;
+        height: 35/40rem;
+    }
+    h1{
+        font-size: 50.8/40rem;
+        font-family: [Helvetica];
+    }
+    .search img{
+        width: 39/40rem;
+        height: 39/40rem;
+    }
+}
+.main:extend(.w){
+    height:317/40rem;
+    img{
+        width:100%;
+        vertical-align: bottom;
+    }
+}
+.list:extend(.w){
+    height: 245/40rem;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: space-between;
+    a{
+        width: 327/40rem;
+        height:104/40rem;
+        font-size: 30.48/40rem;
+        border-radius: 30/40rem;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        img{
+            width:37/40rem;
+            height: 29/40rem;
+            margin-right: 35/40rem;
+        }
+        
+    }
+    .course{
+        background-color: #f97053;
+    }
+    .teacher{
+        background-color: #c759ff;
+    }
+    .sub{
+        background-color: #ff3971;
+    }
+    .download{
+        background-color: #1bbcfc;
+    }
+    
+}
+.faverate:extend(.w){
+    height: 441/40rem;
+    .title{
+        height: 117/40rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    h2{
+        font-size: 33.02/40rem;
+        color: #24253d;
+    }
+    h3{
+        font-size: 28.38/40rem;
+        color: #656565; 
+    }
+    .learn{
+        box-shadow: 0 0 10px rgba(0, 0, 0,.3);
+        width: 329/40rem;
+        height: 324/40rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-right: 20/40rem;
+        .back{
+            width: 285/40rem;
+        }
+        h2{
+            font-size:32.32/40rem;
+            color:#24253d;
+        }
+        .last{
+            display: flex;
+            align-items: center;
+            img{
+                width: 42/40rem;
+                height: 42/40rem;
+                margin-left: 17/40rem;
+                margin-right: 15/40rem;
+            }
+            h3{
+                font-size:24.86/40rem;
+                color:#949494;
+            }
+        }
+    }
+    .content{
+        display: flex;
+        // flex-direction: row;
+        flex-wrap: nowrap;
+        overflow: auto;
+    }
+}

@@ -1,0 +1,18 @@
+@a:red;
+@b:box1;
+@c:box2;
+@d:background-image;
+body{
+    width: 100%;
+    height: 100%;
+    div{
+        width: 100px;
+        height: $width;
+        background-color: @a;
+    }
+    .@{b}{
+        width:100px;
+        //background-image:url("@{c}/2.jpg");
+        @d:url("@{c}/2.jpg");
+    }
+}

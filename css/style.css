@@ -1,0 +1,12 @@
+body {
+  width: 100%;
+  height: 100%;
+}
+body div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+body .box1 {
+  width: 100px;
+}

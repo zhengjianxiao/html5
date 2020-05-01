@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+       html{
+           perspective:800px;
+       }
+       .div1{
+           width:100px;
+           height:100px;
+           margin: 250px auto;
+           background-color: #bfa;
+           transition: all 0.5s;
+       }
+       body:hover .div1{
+           transform: rotateX(90deg);
+           transform:rotateY(90deg);
+           transform: rotateY(180deg) translateZ(200px);
+           transform: translateZ(200px) rotateY(180deg) ;
+           transform: rotateX(180deg) translateZ(200px);
+           transform: translateZ(200px) rotateX(180deg) ;
+       }
+   </style>
+</head>
+<body>
+    <div class="div1"></div>
+</body>
+</html>
